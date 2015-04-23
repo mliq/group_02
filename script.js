@@ -23,6 +23,7 @@ function priceChange(price){
 	}else if (price < .50){
 		price = .50;
 	}
+	price = Math.round(price * 100) / 100;
 	return price;
 }
 
@@ -52,7 +53,7 @@ $(document).ready(function(){
 		$("#markOr").html(Market.oranges);
 		$("#markBa").html(Market.bananas);
 		$("#markPe").html(Market.pears);
-	}, 1500);
+	}, 15000);
 
 		$(".btn").on("click",function (){
 		if (Person.budget - Market[this.id] < 0){
