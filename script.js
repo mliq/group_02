@@ -68,7 +68,7 @@ $(document).ready(function () {
     $(".sellBtn").on("click", function () {
         var fruit = this.id.slice(4);
         if (Person[fruit] < 1) {
-            alert("No " + fruit + "to sell!");
+            alert("No " + fruit + " to sell!");
         } else {
             Person[fruit].shift();
             Person.budget += Market[fruit];
