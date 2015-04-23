@@ -14,11 +14,11 @@ var Person = {
     oranges: [],
     bananas: [],
     pears: [],
-    budget: 100
+    budget: 50
 };
 
 function priceChange(price) {
-    price += randomNumber(-50, 50) / 100;
+    price += randomNumber(-25, 25) / 100;
     if (price > 9.99) {
         price = 9.99;
     } else if (price < .50) {
