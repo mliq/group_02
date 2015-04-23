@@ -37,8 +37,11 @@ function avgArray(array) {
     });
     return Math.round((sum / array.length) * 100) / 100;
 }
-
+var countdown;
 $(document).ready(function () {
+
+    countdown = 15;
+
     $("#apples").append("<br>Price: $<p id='markAp'>" + Market.apples + "</p>");
     $("#oranges").append("<br>Price: $<p id='markOr'>" + Market.oranges + "</p>");
     $("#bananas").append("<br>Price: $<p id='markBa'>" + Market.bananas + "</p>");
@@ -46,6 +49,11 @@ $(document).ready(function () {
     $("#userInfo").append("<p>Budget: " + Person.budget + "</p>");
 
     setInterval(function () {
+        countdown = 15;
+        setInterval(function(){
+            console.log(countdown);
+            countdown--;
+        },1000);
         for (var fruit in Market) {
             Market[fruit] = priceChange(Market[fruit]);
         }
