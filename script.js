@@ -62,6 +62,7 @@ $(document).ready(function () {
         } else {
             Person[this.id].push(Market[this.id]);
             Person.budget -= Market[this.id];
+            Person.budget = Math.round(Person.budget * 100) / 100;
             $("#userInfo").html("<p>Budget: $" + Person.budget + "</p><p>Apples: " + Person.apples.length + " at an average price of $" + avgArray(Person.apples) + "</p>" + "<p>Oranges: " + Person.oranges.length + " at an average price of $" + avgArray(Person.oranges) + "</p>" + "<p>Bananas: " + Person.bananas.length + " at an average price of $" + avgArray(Person.bananas) + "</p>" + "<p>Pears: " + Person.pears.length + " at an average price of $" + avgArray(Person.pears) + "</p>");
         }
     });
@@ -72,6 +73,7 @@ $(document).ready(function () {
         } else {
             Person[fruit].shift();
             Person.budget += Market[fruit];
+            Person.budget = Math.round(Person.budget * 100) / 100;
             $("#userInfo").html("<p>Budget: $" + Person.budget + "</p><p>Apples: " + Person.apples.length + " at an average price of $" + avgArray(Person.apples) + "</p>" + "<p>Oranges: " + Person.oranges.length + " at an average price of $" + avgArray(Person.oranges) + "</p>" + "<p>Bananas: " + Person.bananas.length + " at an average price of $" + avgArray(Person.bananas) + "</p>" + "<p>Pears: " + Person.pears.length + " at an average price of $" + avgArray(Person.pears) + "</p>");
         }
     });
