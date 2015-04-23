@@ -1,24 +1,42 @@
-.btn {
-    display:inline-block;
-    margin: 50px 0px 0px 70px;
-    width: 15%;
+#fruits{
+    /*display:inline;*/
+    margin: auto;
+    width: 90%;
+    /*height: auto;*/
+    /*border: 1px solid;*/
+}
+.container {
+    /*display:inline;*/
+    float:left;
+    margin: auto auto auto 20px;
+
+    /*margin: 50px 0px 0px 70px;*/
+    /*margin: 5px auto;*/
+    width: 20%;
     border: 1px solid ;
-    text-align: center;
-    padding: 1em 0 0 0;
+    /*text-align: center;*/
+    /*padding: 1em 0 0 0;*/
+}
+
+.sellBtn {
+    /*margin: 10px auto;*/
+    /*text-align: center;*/
+    border: 1px solid ;
+    width: 15%;
 }
 
 #userInfo {
 
-    text-align: center;
+    /*text-align: center;*/
 
 }
 
-#container {
+/*#container {*/
 
-    margin: 0 auto 0 auto;
-    width: 80%;
-}
+    /*margin: 0 auto 0 auto;*/
+    /*width: 80%;*/
+/*}*/
+
 h1 {
-
     text-align: center;
 }

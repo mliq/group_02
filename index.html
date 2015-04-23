@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
+<head>
+    <meta charset="utf-8">
+    <title></title>
 
-		<meta name="description" content="Webpage">
-		<link href="stylesheet.css" rel="stylesheet">
+    <meta name="description" content="Webpage">
+    <link href="stylesheet.css" rel="stylesheet">
 
-		<script src="jquery.min.js"></script>
-		<script src="script.js"></script>
-	</head>
-	
-	<body>
-		<h1>Fruit Market</h1>
-		<div id="container">
-			<div class="btn" id="apples"><img src="images/apple.png"><p>apples</p></div>
-			<div class="sellBtn" id="sellapples">Sell an Apple</div>
-			<div class="btn" id="oranges"><img src="images/orange.png"><p>oranges</p></div>
-			<div class="sellBtn" id="selloranges">Sell an Orange</div>
-			<div class="btn" id="bananas"><img src="images/bananas.png"><p>bananas</p></div>
-			<div class="sellBtn" id="sellbananas">Sell a Banana</div>
-			<div class="btn" id="pears"><img src="images/pear.png"><p>pears</p></div>
-			<div class="sellBtn" id="sellpears">Sell a pear</div>
-		</div>
-		<div id="userInfo"></div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
 
-	</body>
+<body>
+<h1>Fruit Market</h1>
+<div id="fruits">
+    <div class='container' id="appleContainer">
+        <div class="btn" id="apples"><img src="images/apple.png"><p>apples</p></div>
+        <div class="sellBtn" id="sellapples">Sell an Apple</div>
+    </div>
+
+    <div class='container' id="orangesContainer">
+        <div class="btn" id="oranges"><img src="images/orange.png"><p>oranges</p></div>
+        <div class="sellBtn" id="selloranges">Sell an Orange</div>
+    </div>
+
+    <div class='container' id="bananaContainer">
+        <div class="btn" id="bananas"><img src="images/bananas.png"><p>bananas</p></div>
+        <div class="sellBtn" id="sellbananas">Sell a Banana</div>
+    </div>
+
+    <div class='container' id="pearContainer">
+        <div class="btn" id="pears"><img src="images/pear.png"><p>pears</p></div>
+        <div class="sellBtn" id="sellpears">Sell a pear</div>
+    </div>
+
+
+</div>
+<div id="userInfo"></div>
+</body>
 </html>
