@@ -35,7 +35,7 @@ function avgArray(array) {
     var sum = array.reduce(function (a, b) {
         return a + b;
     });
-    return sum / array.length;
+    return Math.round((sum / array.length) * 100) / 100;
 }
 
 $(document).ready(function () {
