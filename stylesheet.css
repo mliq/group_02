@@ -3,15 +3,12 @@ body {
 }
 
 #fruits{
-    /*display:inline;*/
-    margin: auto;
+    float:left;
+    margin: 0 10%;
     width: 90%;
     height: 250px;
-    /*height: auto;*/
-    /*border: 1px solid;*/
 }
 .container {
-    /*display:inline;*/
     background-color: darkgreen;
     font-size: 18px;
     float:left;
@@ -34,10 +31,10 @@ body {
 }
 
 #userInfo {
-    /*float:left;*/
+    float:left;
     font-size: 18px;
     width: 60%;
-    margin: auto auto;
+    margin: auto 20%;
     border: 1px solid;
     text-align: center;
 
